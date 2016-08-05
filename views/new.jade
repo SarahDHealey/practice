@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p This is my new Pokemon form.
+  div
+    form(name='newPokemon', method='post')
+      input(type='text', name='pokemonName', placeholder='poke')
+      input(type='text', name='trainerName', placeholder='trainer')
+      input(type='integer', name='cp', placeholder='cp')
+      input(type='boolean', name='inGym', placeholder='in gym')
+      input(type='submit', value="add")

@@ -3,7 +3,10 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.redirect('/pokemon');
+  res.render('index');
+});
+router.get('/new', function(req, res, next) {
+  res.render('new');
 });
 
 module.exports = router;
