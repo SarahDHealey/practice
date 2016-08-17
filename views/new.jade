@@ -4,9 +4,8 @@ block content
   h1= title
   p This is my new Pokemon form.
   div
-    form(name='newPokemon', method='post')
-      input(type='text', name='pokemonName', placeholder='poke')
-      input(type='text', name='trainerName', placeholder='trainer')
+    form(name='newPokemon', action='/pokemon/new', method='post')
+      input(type='text', name='name', placeholder='poke')
       input(type='integer', name='cp', placeholder='cp')
-      input(type='boolean', name='inGym', placeholder='in gym')
+      input(type='boolean', name='in_gym', placeholder='in gym')
       input(type='submit', value="add")
